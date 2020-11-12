@@ -1,0 +1,197 @@
+html{
+  height: 100vh;
+}
+
+body{
+  background-color: #e6eff6;
+  font-family: "Karla", sans-serif;
+  height: 100%;
+  margin: 0;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button{
+  background-color: #bfdf32;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px grey;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 30px;
+
+  height: 50px;
+  width: 95%;
+}
+
+button:hover{
+  background-color: #cbee33;
+  cursor: pointer;
+}
+
+h3{
+  margin: 0;
+}
+
+h4{
+  font-weight: lighter;
+}
+
+.container{
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px grey;
+  max-width: 100vw;
+  width: 48.75rem;
+}
+
+.above{
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 3.125rem 2.5rem;
+}
+
+.above > h1{
+  color: #2bb3b1;
+  margin-top: 0;
+}
+
+.above > h2{
+  color: #bfdf32;
+}
+
+.above > h3{
+  color: #98a6bd;
+}
+
+.below{
+  display: flex;
+}
+
+.left > h2, h3{
+  color: #ffffff;
+}
+
+.left{
+  background-color: #2ab2af;
+  border-bottom-left-radius: 10px;
+  padding: 1.875rem 2.5rem;
+  width: 50%;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.price > h3{
+  font-size: 3rem;
+  margin: 0 10px 0 0;
+}
+
+.price > h4{
+  color: #b6e1e4;
+  font-size: 1rem;
+}
+
+.right{
+  background-color: #4abfbc;
+  border-bottom-right-radius: 10px;
+  line-height: 1.5rem;
+  padding: 1.875rem 2.5rem;
+  width: 50%;
+}
+
+.right > h2{
+  color: #ffffff;
+}
+
+.right > h4{
+  color: #d2efee;
+}
+
+.attribution{
+  color: #2bb3b1;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.attribution > a{
+  color: #bfdf32;
+  text-decoration: none;
+}
+
+.attribution a:hover{
+  color: #cbee33;
+}
+
+@media screen and (max-height: 620px){
+  body{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body{
+    height: auto;
+  }
+
+  .container{
+    margin-top: 30px;
+    width: 24.375rem;
+  }
+
+  .below{
+    display: block;
+    width: 24.375rem;
+  }
+
+  .left{
+    border-bottom-left-radius: 0;
+    padding-bottom: 0;
+
+    height: 18.9319375rem;
+    width: 19.375rem;
+  }
+
+  .right{
+    border-bottom-left-radius: 10px;
+    padding-bottom: 0;
+
+    height: 18.9319375rem;
+    width: 19.375rem;
+  }
+
+  .attribution{
+    font-size: 0.875rem;
+    margin: 30px auto;
+    width: 24.375rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    .container{
+      font-size: 0.625rem;
+      width: 9.375rem;
+    }
+
+    .price > h3{
+      font-size: 1.875rem;
+    }
+
+    .above, .below, .left, .right{
+      line-height: 1rem;
+      font-size: 0.625;
+      width: 6.25rem;
+    }
+
+    .attribution{
+      font-size: 0.625rem;
+      width: 100%;
+    }
+  }
+}
